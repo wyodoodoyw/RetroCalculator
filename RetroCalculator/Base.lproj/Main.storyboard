@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Korean_Calligraphy.ttf">
+            <string>Korean-Calligraphy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -168,7 +173,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9w1-9t-amu">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Korean-Calligraphy" family="Korean Calligraphy" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -186,7 +191,7 @@
                             <constraint firstItem="ORn-rY-IQp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qix-0D-aQ6"/>
                             <constraint firstItem="BMe-bv-3sU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="45" id="abC-z4-nlo"/>
                             <constraint firstItem="BMe-bv-3sU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b98-39-PY5"/>
-                            <constraint firstItem="9w1-9t-amu" firstAttribute="centerY" secondItem="Dnj-wm-bcT" secondAttribute="centerY" id="dKb-tj-yGv"/>
+                            <constraint firstItem="9w1-9t-amu" firstAttribute="centerY" secondItem="Dnj-wm-bcT" secondAttribute="centerY" constant="7" id="dKb-tj-yGv"/>
                             <constraint firstItem="DG2-5Z-h8l" firstAttribute="centerX" secondItem="BMe-bv-3sU" secondAttribute="centerX" id="k5M-R0-9jZ"/>
                             <constraint firstItem="L8s-kQ-rgw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ljC-df-63U"/>
                             <constraint firstItem="DG2-5Z-h8l" firstAttribute="centerY" secondItem="BMe-bv-3sU" secondAttribute="centerY" id="qk9-9w-9oj"/>
