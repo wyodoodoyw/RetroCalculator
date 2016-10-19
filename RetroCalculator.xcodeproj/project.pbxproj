@@ -13,6 +13,7 @@
 		48DF088B1DB7D0320062ED36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48DF088A1DB7D0320062ED36 /* Assets.xcassets */; };
 		48DF088E1DB7D0320062ED36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DF088C1DB7D0320062ED36 /* LaunchScreen.storyboard */; };
 		48DF08961DB7DAA90062ED36 /* Korean_Calligraphy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48DF08951DB7DAA90062ED36 /* Korean_Calligraphy.ttf */; };
+		48DF08981DB7DF1C0062ED36 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 48DF08971DB7DF1C0062ED36 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		48DF088D1DB7D0320062ED36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48DF088F1DB7D0320062ED36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48DF08951DB7DAA90062ED36 /* Korean_Calligraphy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Korean_Calligraphy.ttf; path = ../Korean_Calligraphy.ttf; sourceTree = "<group>"; };
+		48DF08971DB7DF1C0062ED36 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		48DF08821DB7D0320062ED36 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				48DF08971DB7DF1C0062ED36 /* btn.wav */,
 				48DF08951DB7DAA90062ED36 /* Korean_Calligraphy.ttf */,
 				48DF08831DB7D0320062ED36 /* AppDelegate.swift */,
 				48DF08851DB7D0320062ED36 /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DF08981DB7DF1C0062ED36 /* btn.wav in Resources */,
 				48DF088E1DB7D0320062ED36 /* LaunchScreen.storyboard in Resources */,
 				48DF08961DB7DAA90062ED36 /* Korean_Calligraphy.ttf in Resources */,
 				48DF088B1DB7D0320062ED36 /* Assets.xcassets in Resources */,
