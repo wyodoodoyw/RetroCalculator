@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Korean_Calligraphy.ttf">
+            <string>Korean-Calligraphy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -14,14 +20,62 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="yuX-sa-oop"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-T9-iUY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="dQ0-i2-x1Z"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZhY-12-SyZ">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retro Calc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBc-4z-1nq">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="kfu-Gc-6TQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Korean-Calligraphy" family="Korean Calligraphy" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="j8R-LD-Twh">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Cpk-i5-xYp"/>
+                                            <constraint firstAttribute="width" constant="240" id="rIa-bP-Vv7"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cBc-4z-1nq" secondAttribute="trailing" constant="43" id="Itn-Lb-jVs"/>
+                                    <constraint firstItem="cBc-4z-1nq" firstAttribute="centerX" secondItem="ZhY-12-SyZ" secondAttribute="centerX" id="UwW-5q-86f"/>
+                                    <constraint firstItem="cBc-4z-1nq" firstAttribute="leading" secondItem="ZhY-12-SyZ" secondAttribute="leading" constant="43" id="Zjd-UY-ErV"/>
+                                    <constraint firstItem="j8R-LD-Twh" firstAttribute="centerX" secondItem="ZhY-12-SyZ" secondAttribute="centerX" id="hPY-rg-r17"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZhY-12-SyZ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="15" id="AKh-yb-vjg"/>
+                            <constraint firstItem="vbg-T9-iUY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="GLM-LI-Jhy"/>
+                            <constraint firstItem="yuX-sa-oop" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Lgo-xh-E4O"/>
+                            <constraint firstAttribute="trailing" secondItem="yuX-sa-oop" secondAttribute="trailing" id="X4B-O9-IPb"/>
+                            <constraint firstAttribute="trailing" secondItem="vbg-T9-iUY" secondAttribute="trailing" id="cq0-5O-RE7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vbg-T9-iUY" secondAttribute="bottom" id="lsp-Dn-oNy"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="yuX-sa-oop" secondAttribute="bottom" id="r0Y-Kk-EJg"/>
+                            <constraint firstItem="ZhY-12-SyZ" firstAttribute="centerX" secondItem="yuX-sa-oop" secondAttribute="centerX" id="u1q-AF-qHg"/>
+                            <constraint firstItem="yuX-sa-oop" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xfJ-MF-rBR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchbg" width="1433" height="957"/>
+        <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
+    </resources>
 </document>
